@@ -1,9 +1,12 @@
 language: java
 
-sudo: false
+sudo: required
+
+services:
+  - docker
 
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 branches:
   only:
@@ -13,13 +16,21 @@ branches:
 os:
   - linux
 
+install: true
+script: mvn clean install
+  
+before_deploy:
+  - ./ci/before_deploy.sh 
+
+deploy:
+  provider: script
+  script:  bash ./ci/deploy.sh
+  on: 
+    branch: master
+
 cache:
   directories:
   - $HOME/.m2
-
-after_sucess:
-- "./ci/before_deploy.sh"
-- "./ci/deploy.sh"
 
 notifications:
   email: laaws-dev@lists.lockss.org
