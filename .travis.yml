@@ -17,6 +17,7 @@ os:
   - linux
 
 install: true
+
 script: mvn clean install
   
 before_deploy:
@@ -24,7 +25,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script:  bash ./ci/deploy.sh
+  script: ./ci/deploy.sh
   on: 
     branch: master
 

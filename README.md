@@ -33,8 +33,10 @@ $ travis encrypt --add -r lockss/<repository> SONATYPE_USERNAME=<sonatype userna
 $ travis encrypt --add -r lockss/<repository> SONATYPE_PASSWORD=<sonatype password>
 $ travis encrypt --add -r lockss/<repository> GPG_KEYNAME=<gpg keyname>
 $ travis encrypt --add -r lockss/<repository> GPG_PASSPHRASE=<gpg passphrase>
+$ travis encrypt --add -r lockss/<repository> DOCKER_USERNAME=<docker user>
+$ travis encrypt --add -r lockss/<repository> DOCKER_PASSPHRASE=<docker passphrase>
 ```
-You should now have a series of entries like this in the .travis.yml:
+You should now have a series of 6 entries like this in the .travis.yml:
 <pre>
 env:
   global:
@@ -42,6 +44,8 @@ env:
   - secure: c0EvMYTkmNqu0T5q/1BTHTbsTjkFfH0iU3/Da7C...
   - secure: JB31VmNYEyuqFaXjOvlELUO7MbH7W5XyI8TUQz4...
   - secure: t1+V3OfM1EiJP+F2jjXHoix83Gq8rBaqfWx9x6p...
+  - secure: 2Kseu5NYEyuqFaXjOvlELUO7MkjsIEnl2mTUQz4...
+  - secure: x1aVmOfM1EiJP+surn2mdMSIEHslkgh193maizh...
 </pre>
 
 
