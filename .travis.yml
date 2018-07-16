@@ -21,13 +21,14 @@ install: true
 script: mvn clean install
   
 before_deploy:
-  - ./ci/before_deploy.sh 
+  - bash ./ci/before_deploy.sh 
 
 deploy:
   provider: script
   script: ./ci/deploy.sh
   on: 
     branch: master
+    tags: true
 
 cache:
   directories:
