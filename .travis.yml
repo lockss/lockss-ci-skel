@@ -18,14 +18,14 @@ os:
 
 install: true
 
-script: mvn clean install
+script: mvn -q clean install
   
 before_deploy:
   - bash ./ci/before_deploy.sh 
 
 deploy:
   provider: script
-  script: ./ci/deploy.sh
+  script: bash ./ci/deploy.sh
   on: 
     branch: master
     tags: true
@@ -35,4 +35,4 @@ cache:
   - $HOME/.m2
 
 notifications:
-  email: laaws-dev@lists.lockss.org
+  email: dev-notify@lockss.org
