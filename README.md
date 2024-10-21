@@ -1,3 +1,23 @@
+**ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED**
+
+```
+  ##    ####    ###   #    #  ###  #   #  #####  #####   
+ #  #   #   #  #   #  #    #   #   #   #  #       #   #  
+#    #  #   #  #      #    #   #   #   #  #       #   #  
+#    #  #   #  #      #    #   #    # #   #       #   #  
+#    #  ####   #      ######   #    # #   ####    #   #  
+######  ##     #      #    #   #    # #   #       #   #  
+#    #  # #    #      #    #   #     #    #       #   #  
+#    #  #  #   #   #  #    #   #     #    #       #   #  
+#    #  #   #   ###   #    #  ###    #    #####  #####  
+```
+
+**ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED ARCHIVED**
+
+**This Git repository is obsolete and has been archived.**
+
+----
+
 # Adding Travis CI to Maven Central Support
 
 To setup a travis-ci build in a new project
